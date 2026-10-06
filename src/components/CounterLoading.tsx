@@ -1,0 +1,150 @@
+"use client";
+import React from "react";
+import styled from "styled-components";
+
+const CounterLoading = () => {
+  return (
+    <StyledWrapper>
+      <div id="timer">
+        <div id="div1" />
+        <div id="div2" />
+        <div id="div3" />
+        <div id="div4" />
+        <div id="div5" />
+        <div id="div6" />
+        <div id="div7" />
+        <div id="div8" />
+        <div id="div9" />
+        <div id="div10" />
+        <div id="div11" />
+        <div id="div12" />
+        <div id="div13" />
+        <div id="div14" />
+        <div id="div15" />
+      </div>
+    </StyledWrapper>
+  );
+};
+
+const StyledWrapper = styled.div`
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #timer {
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    grid-template-rows: repeat(5, 20px);
+    gap: 8px;
+    grid-template-areas:
+      "div1 div2 div3"
+      "div4 div5 div6"
+      "div7 div8 div9"
+      "div10 div11 div12"
+      "div13 div14 div15";
+  }
+
+  #timer > div {
+    background-color: #3b82f6;
+    border-radius: 4px;
+  }
+
+  #div1 { grid-area: div1; animation: div1 10s both infinite; }
+  #div2 { grid-area: div2; animation: div2 10s both infinite; }
+  #div3 { grid-area: div3; }
+  #div4 { grid-area: div4; animation: div4 10s both infinite; }
+  #div5 { grid-area: div5; display: none; }
+  #div6 { grid-area: div6; animation: div6 10s both infinite; }
+  #div7 { grid-area: div7; animation: div7 10s both infinite; }
+  #div8 { grid-area: div8; animation: div8 10s both infinite; }
+  #div9 { grid-area: div9; }
+  #div10 { grid-area: div10; animation: div10 10s both infinite; }
+  #div11 { grid-area: div11; display: none; }
+  #div12 { grid-area: div12; animation: div12 10s both infinite; }
+  #div13 { grid-area: div13; animation: div13 10s both infinite; }
+  #div14 { grid-area: div14; animation: div14 10s both infinite; }
+  #div15 { grid-area: div15; }
+
+  @keyframes div1 {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(56px); }
+    20% { transform: translateX(0); }
+  }
+
+  @keyframes div2 {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(28px); }
+    20% { transform: translateX(0); }
+    40% { transform: translateX(28px); }
+    50% { transform: translateX(0); }
+  }
+
+  @keyframes div4 {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(56px); }
+    40% { transform: translateX(0); }
+    70% { transform: translateX(56px); }
+    80% { transform: translateX(0); }
+  }
+
+  @keyframes div6 {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-56px); }
+    70% { transform: translateX(-56px); }
+    80% { transform: translateX(0); }
+  }
+
+  @keyframes div7 {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(56px); }
+    20% { transform: translateX(0); }
+    70% { transform: translateX(56px); }
+    80% { transform: translateX(0); }
+  }
+
+  @keyframes div8 {
+    0% { transform: translateX(28px); }
+    20% { transform: translateX(0); }
+    70% { transform: translateX(28px); }
+    100% { transform: translateX(28px); }
+  }
+
+  @keyframes div10 {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(56px); }
+    30% { transform: translateX(56px); }
+    60% { transform: translateX(0); }
+    80% { transform: translateX(56px); }
+    100% { transform: translateX(0); }
+  }
+
+  @keyframes div12 {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-56px); }
+    30% { transform: translateX(0); }
+  }
+
+  @keyframes div13 {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(56px); }
+    20% { transform: translateX(0); }
+    40% { transform: translateX(56px); }
+    50% { transform: translateX(0); }
+    70% { transform: translateX(56px); }
+    80% { transform: translateX(0); }
+  }
+
+  @keyframes div14 {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(28px); }
+    20% { transform: translateX(0); }
+    40% { transform: translateX(28px); }
+    50% { transform: translateX(0); }
+    70% { transform: translateX(28px); }
+    80% { transform: translateX(0); }
+  }
+`;
+
+export default CounterLoading;
